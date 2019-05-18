@@ -66,7 +66,7 @@ void ds3231_test(void *pvParameters)
         if(xStatus == pdPASS)   //キュー受け取ったら
         {
             ESP_LOGI(TAG, "received: %d", rtcArg.rtcQueue);
-            /*  キューの引数によってピンを駆動  */
+            /*  キューの引数によって取得  */
             switch(rtcArg.rtcQueue)
             {
                 case RTC_GET_TIME:
