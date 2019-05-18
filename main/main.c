@@ -10,7 +10,7 @@
 QueueHandle_t rtcQueue;             //キュー制御用ハンドル
 static const char *TAG = "MAIN";    //ESP_LOGIとかやるときの出力につけるヘッダ
 
-/*  rtc状態リスト   */
+/*  rtc要求リスト   */
 typedef enum rtcTaskQueue_t
 {
     RTC_NONE = 0,       //何もしない予定
